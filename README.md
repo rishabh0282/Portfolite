@@ -23,6 +23,32 @@ Portfolite removes the boilerplate, allowing you to spin up a sleek, professiona
 - **[Tabler Icons](https://tabler.io/icons)**: Crisp, open-source SVG iconography.
 - **TypeScript**: For a robust and error-free developer experience.
 
+
+## Project Structure
+
+```
+Portfolite/
+├── public/
+│   └── favicon.svg          # Site favicon
+├── src/
+│   ├── components/          # Astro components
+│   │   ├── About.astro      # About section
+│   │   ├── Education.astro  # Education section
+│   │   ├── Experience.astro # Work experience section
+│   │   ├── Footer.astro     # Site footer
+│   │   ├── Header.astro     # Navigation header
+│   │   ├── Hero.astro       # Hero/intro section
+│   │   └── Projects.astro   # Projects showcase
+│   ├── pages/
+│   │   └── index.astro      # Main page layout
+│   ├── styles/
+│   │   └── global.css       # Global styles
+│   └── config.ts            # Site configuration
+├── astro.config.mjs         # Astro configuration
+├── package.json             # Project dependencies
+├── tailwind.config.js       # Tailwind configuration
+└── tsconfig.json            # TypeScript configuration
+```
 ---
 
 ## ⚡ Fast Setup
@@ -33,3 +59,26 @@ Get up and running on your local machine in three commands.
 ```bash
 git clone [https://github.com/rishabh0282/Portfolite.git](https://github.com/rishabh0282/Portfolite.git)
 cd Portfolite
+```
+
+**2. Install dependencies:**
+
+```bash
+npm install
+```
+**3. Run the Server:**
+
+```bash
+npm run dev
+```
+
+## Deployment 
+
+The template can be deployed to any static hosting service easily (and in most cases, completely free). 
+Here are some options: 
+- Vercel, [click here](https://docs.astro.build/en/guides/deploy/vercel/). 
+- GitHub Pages, [click here](https://docs.astro.build/en/guides/deploy/github/). 
+
+## Questions? 
+> For questions and updates, feel free to reach out on [**X (Twitter)**](https://x.com/auracup). 
+> If you've built and published your personal site with this template, I'd love to see it! Send me a DM 🚀
