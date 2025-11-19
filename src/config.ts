@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Rishabh Tiwari",
   title: "Software Test Engineer",
   description: "Portfolio website of Rishabh Tiwari",
-  accentColor: "#4F46E5",
+  accentColor: "#8B5CF6",
   social: {
     email: "rishabhofficial244@gmail.com",
     linkedin: "https://linkedin.com/in/rishabh028210",
@@ -10,7 +10,7 @@ export const siteConfig = {
     github: "https://github.com/rishabh0282",
   },
   aboutMe:
-    "I am Rishabh Tiwari, an ISTQB Certified Software Test Engineer with expertise in manual testing, defect tracking, and database validation. I hold a B.Tech in Electronics and Communication Engineering from Amity University, Noida, along with certifications in ISTQB Foundation Level and Microsoft Azure Fundamentals. My career includes working at IBM India Pvt. Ltd. as an Associate Systems Engineer, where I improved defect resolution and sprint efficiency, and interning at Collaborative Intelligence Pvt. Ltd., where I co‑developed deep learning pipelines for drone imagery. I am passionate about quality assurance, computer vision, and deep learning, and I enjoy creating portfolios and content that combine technical precision with creative presentation.",
+    "I am Rishabh Tiwari, a Software Test Engineer certified by ISTQB, specializing in both Manual and Automation testing. I possess a B.Tech in Electronics and Communication Engineering from Amity University, Noida, as well as certifications in ISTQB Foundation Level and Microsoft Azure Fundamentals. I served at IBM India Pvt. Ltd. as an Associate Systems Engineer, where I enhanced the testing approach, defect management, and sprint productivity. Prior to joining IBM, I interned at Collaborative Intelligence Pvt. Ltd., where I developed deep learning pipelines for Object Detection and Tracking. I have a strong interest in software development and computer vision, and I love gaming as well as creating content with imaginative presentations.",
   skills: [
     "Manual Testing",
     "JavaScript",
