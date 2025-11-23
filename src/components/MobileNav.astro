@@ -1,0 +1,77 @@
+---
+import { siteConfig } from "../config";
+
+const hasProjects = siteConfig.projects?.length > 0;
+const hasExperience = siteConfig.experience?.length > 0;
+const hasEducation = siteConfig.education?.length > 0;
+
+const links = [
+  { label: "About", href: "#about" },
+  hasProjects && { label: "Projects", href: "#projects" },
+  hasExperience && { label: "Experience", href: "#experience" },
+  hasEducation && { label: "Education", href: "#education" },
+].filter(Boolean);
+---
+
+<div class="md:hidden">
+  <!-- Floating Action Button -->
+  <button
+    id="mobileNavBtn"
+    class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full flex items-center justify-center bg-indigo-500 text-white text-3xl shadow-xl transition-all active:scale-90"
+  >
+    ☰
+  </button>
+
+  <!-- Expanding Bubble Menu -->
+  <div
+    id="mobileNavMenu"
+    class="fixed bottom-24 right-6 flex flex-col items-end gap-3 z-40 opacity-0 pointer-events-none transition-all duration-300"
+  >
+    {links.map((link) => (
+      <a
+        href={link.href}
+        class="bubble-item px-4 py-2 rounded-full bg-slate-900 border border-slate-700 text-slate-200 text-sm shadow-md hover:border-indigo-400 hover:text-indigo-300 transition-all"
+      >
+        {link.label}
+      </a>
+    ))}
+  </div>
+</div>
+
+<script>
+  const btn = document.getElementById("mobileNavBtn");
+  const menu = document.getElementById("mobileNavMenu");
+  let open = false;
+
+  btn?.addEventListener("click", () => {
+    open = !open;
+    if (open) {
+      menu.style.opacity = "1";
+      menu.style.pointerEvents = "auto";
+      btn.textContent = "×";
+      menu.style.transform = "translateY(0)";
+    } else {
+      menu.style.opacity = "0";
+      menu.style.pointerEvents = "none";
+      btn.textContent = "☰";
+    }
+  });
+
+  // Auto-close when clicking a menu link
+  menu?.addEventListener("click", () => {
+    open = false;
+    menu.style.opacity = "0";
+    menu.style.pointerEvents = "none";
+    btn.textContent = "☰";
+  });
+</script>
+
+<style>
+  #mobileNavMenu {
+    transform: translateY(20px);
+  }
+
+  .bubble-item {
+    backdrop-filter: blur(6px);
+  }
+</style>

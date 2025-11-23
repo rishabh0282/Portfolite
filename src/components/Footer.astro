@@ -1,194 +1,72 @@
 ---
 import { siteConfig } from "../config";
 
-const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
-const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
-const hasEducation = siteConfig.education && siteConfig.education.length > 0;
+const hasProjects = siteConfig.projects?.length > 0;
+const hasExperience = siteConfig.experience?.length > 0;
+const hasEducation = siteConfig.education?.length > 0;
 ---
 
-<footer class="relative bg-gray-50 border-t border-gray-200">
-  <div class="mx-auto max-w-6xl px-6 py-12 lg:px-8">
-    <div
-      class="flex flex-col md:flex-row md:items-center md:justify-between gap-8"
-    >
-      <div class="flex flex-col gap-4">
-        <h3 class="text-2xl font-bold text-gray-800">
-          {siteConfig.name}
-        </h3>
-        <p class="text-base text-gray-600">
-          {siteConfig.title}
-        </p>
-        <div class="flex gap-x-6">
-          <a
-            href={`mailto:${siteConfig.social.email}`}
-            aria-label="Email"
-            class="text-gray-600 transition-colors duration-300 hover:text-[var(--accent-color)]"
-            style={`--accent-color: ${siteConfig.accentColor}`}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="h-6 w-6"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-              <path
-                d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"
-              ></path>
-              <path d="M3 7l9 6l9 -6"></path>
-            </svg>
-          </a>
-          <a
-            href={siteConfig.social.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-            class="text-gray-600 transition-colors duration-300 hover:text-[var(--accent-color)]"
-            style={`--accent-color: ${siteConfig.accentColor}`}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="h-6 w-6"
-              ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
-                d="M8 11v5"></path><path d="M8 8v.01"></path><path d="M12 16v-5"
-              ></path><path d="M16 16v-3a2 2 0 1 0 -4 0"></path><path
-                d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z"
-              ></path></svg
-            >
-          </a>
-          <a
-            href={siteConfig.social.twitter}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Twitter"
-            class="text-gray-600 transition-colors duration-300 hover:text-[var(--accent-color)]"
-            style={`--accent-color: ${siteConfig.accentColor}`}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="h-6 w-6"
-              ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
-                d="M4 4l11.733 16h4.267l-11.733 -16z"></path><path
-                d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path></svg
-            >
-          </a>
-          <a
-            href={siteConfig.social.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub"
-            class="text-gray-600 transition-colors duration-300 hover:text-[var(--accent-color)]"
-            style={`--accent-color: ${siteConfig.accentColor}`}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="h-6 w-6"
-              ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
-                d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
-              ></path></svg
-            >
-          </a>
-        </div>
-      </div>
+<footer class="bg-slate-950 border-t border-slate-800 text-slate-400 px-6 md:px-20 lg:px-32 py-14 mt-24">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row md:items-start md:justify-between gap-10">
 
-      <div class="hidden md:block flex flex-col md:items-end gap-4">
-        <nav class="flex gap-x-8">
-          <a
-            href="#about"
-            class="text-sm text-gray-600 hover:text-gray-800 transition-colors"
-            >About</a
-          >
-          {
-            hasProjects && (
-              <a
-                href="#projects"
-                class="text-sm text-gray-600 hover:text-gray-800 transition-colors"
-              >
-                Projects
-              </a>
-            )
-          }
-          {
-            hasExperience && (
-              <a
-                href="#experience"
-                class="text-sm text-gray-600 hover:text-gray-800 transition-colors"
-              >
-                Experience
-              </a>
-            )
-          }
-          {
-            hasEducation && (
-              <a
-                href="#education"
-                class="text-sm text-gray-600 hover:text-gray-800 transition-colors"
-              >
-                Education
-              </a>
-            )
-          }
-        </nav>
-        <p class="text-sm text-gray-500">
-          © {new Date().getFullYear()}
-          {siteConfig.name}. All rights reserved.
-        </p>
+    <!-- Branding -->
+    <div>
+      <h3 class="text-2xl text-slate-100 font-bold accent-mono">{siteConfig.name}</h3>
+      <p class="accent-mono text-sm mt-1">{siteConfig.title}</p>
+
+      <!-- Social Icons -->
+      <div class="flex gap-5 mt-6 text-xl">
+        <a href={`mailto:${siteConfig.social.email}`} class="footer-icon" aria-label="Email">
+          ✉️
+        </a>
+        <a href={siteConfig.social.linkedin} target="_blank" aria-label="LinkedIn" class="footer-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708C16 15.487 15.474 16 14.825 16H1.175C.526 16 0 15.487 0 14.854V1.146zM4.943 13.374V6.169H2.542v7.205h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248H3.743zm4.908 8.212h2.401v-4.012c0-.215.015-.43.08-.584.174-.43.572-.875 1.239-.875.872 0 1.22.66 1.22 1.63v3.841h2.4V9.028c0-2.278-1.216-3.34-2.836-3.34-1.312 0-1.888.73-2.212 1.238h-.031V6.17H8.651c.03.677 0 7.204 0 7.204z"/>
+          </svg>
+        </a>
+        <a href={siteConfig.social.github} target="_blank" aria-label="GitHub" class="footer-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38v-1.3c-2.22.48-2.69-.94-2.69-.94-.36-.91-.88-1.15-.88-1.15-.72-.49.05-.48.05-.48.8.06 1.22.82 1.22.82.71 1.22 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.97 0-.88.31-1.59.82-2.15-.08-.21-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.67 7.67 0 012-.27c.68 0 1.36.09 2 .27 1.52-1.03 2.2-.82 2.2-.82.44 1.1.16 1.91.08 2.12.51.56.82 1.27.82 2.15 0 3.09-1.87 3.77-3.65 3.97.29.25.54.73.54 1.48v2.19c0 .21.15.45.55.38A8 8 0 0016 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+        </a>
+        <a href={siteConfig.social.twitter} target="_blank" aria-label="Twitter" class="footer-icon">
+          🐦
+        </a>
       </div>
     </div>
-  </div>
 
-  <!-- Decorative pattern -->
-  <div class="absolute inset-0 -z-10 overflow-hidden">
-    <svg
-      aria-hidden="true"
-      class="absolute bottom-0 left-0 w-full h-24 text-gray-100"
-    >
-      <pattern
-        id="footer-pattern"
-        x="0"
-        y="0"
-        width="100"
-        height="100"
-        patternUnits="userSpaceOnUse"
-      >
-        <path
-          d="M0 50 Q 25 40, 50 50 T 100 50"
-          stroke="currentColor"
-          stroke-width="0.5"
-          fill="none"
-          opacity="0.4"></path>
-      </pattern>
-      <rect width="100%" height="100%" fill="url(#footer-pattern)"></rect>
-    </svg>
+    <!-- Navigation -->
+    <div class="text-sm flex flex-col gap-4 md:text-right">
+      <nav class="flex flex-col gap-2 accent-mono">
+        <a href="#about" class="footer-link">About</a>
+        {hasProjects && <a href="#projects" class="footer-link">Projects</a>}
+        {hasExperience && <a href="#experience" class="footer-link">Experience</a>}
+        {hasEducation && <a href="#education" class="footer-link">Education</a>}
+      </nav>
+
+      <p class="text-xs text-slate-500 mt-4">
+        © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
+      </p>
+    </div>
   </div>
 </footer>
+
+<style>
+  .footer-icon {
+    transition: color 0.3s;
+  }
+  .footer-icon:hover {
+    color: var(--accent-color);
+  }
+
+  .footer-link {
+    transition: color 0.25s;
+  }
+  .footer-link:hover {
+    color: var(--accent-color);
+  }
+
+  :root {
+    --accent-color: ${siteConfig.accentColor};
+  }
+</style>

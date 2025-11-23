@@ -1,107 +1,110 @@
-export const siteConfig = {
+export const siteConfig = { 
   name: "Rishabh Tiwari",
-  title: "Software Test Engineer",
-  description: "Portfolio website of Rishabh Tiwari",
-  accentColor: "#8B5CF6",
+  title: "Full-Stack Software Engineer | AI Enthusiast (Computer Vision & Deep Learning)",
+  description: "Portfolio website of Full-Stack and AI Engineer Rishabh Tiwari",
+  accentColor: "#1E40AF",
+
   social: {
     email: "rishabhofficial244@gmail.com",
     linkedin: "https://linkedin.com/in/rishabh028210",
     twitter: "https://x.com/auracup",
     github: "https://github.com/rishabh0282",
   },
+
   aboutMe:
-    "I am Rishabh Tiwari, a Software Test Engineer certified by ISTQB, specializing in both Manual and Automation testing. I possess a B.Tech in Electronics and Communication Engineering from Amity University, Noida, as well as certifications in ISTQB Foundation Level and Microsoft Azure Fundamentals. I served at IBM India Pvt. Ltd. as an Associate Systems Engineer, where I enhanced the testing approach, defect management, and sprint productivity. Prior to joining IBM, I interned at Collaborative Intelligence Pvt. Ltd., where I developed deep learning pipelines for Object Detection and Tracking. I have a strong interest in software development and computer vision, and I love gaming as well as creating content with imaginative presentations.",
+    "I am a Full-Stack and AI Engineer with industry experience in building production-grade applications and computer vision pipelines. I specialize in Java, Angular, .NET, AI-assisted development, and deep learning frameworks such as TensorFlow. I have worked at IBM as a Full-Stack Application Developer, where I built microservices, Angular modules, and enhanced test automation. Previously, at Collaborative Intelligence, I engineered real-time AI workflows for high-resolution object detection. I hold ISTQB and Microsoft Azure certifications, and I enjoy solving real-world problems using scalable software systems and machine learning.",
+
   skills: [
-    "Manual Testing",
-    "JavaScript",
+    "Full-Stack Development",
+    "Angular",
     "Java",
+    ".NET",
     "Python",
-    "RTM Debugging",
-    "TCD",
-    "Regression Testing",
-    "UAT",
-    "Defect Reporting & Tracking",
+    "TypeScript",
+    "C#",
+    "Flask",
+    "Django",
+    "TensorFlow",
     "SQL",
-    "JIRA",
+    "MongoDB",
+    "SQLite",
+    "AI & Computer Vision",
+    "Git",
+    "Azure DevOps",
+    "Unit Testing",
+    "Automation Testing"
   ],
+
   projects: [
     {
-      name: "🛰️ A Novel YOLOv4-Modified Approach for Efficient Object Detection in Satellite Imagery",
+      name: "🛰️ Satellite Object Detection using Modified YOLOv4",
       description:
-        "Developed modified YOLOv4 architecture for detecting small objects in high-resolution satellite imagery. Achieved improved detection speed and accuracy through a unified framework combining TensorFlow Object Detection API.",
+        "Engineered a modified YOLOv4 architecture for small-object detection in satellite imagery, boosting accuracy and inference speed.",
       link: "https://doi.org/10.1111/exsy.13180",
-      skills: [
-        "Deep Learning",
-        "TensorFlow",
-        "Computer Vision",
-        "Satellite Imagery Object Detection",
-        "React",
-        "Node.js",
-      ],
+      skills: ["TensorFlow", "Deep Learning", "Satellite Imagery", "Computer Vision"],
     },
     {
-      name: "🗑️ Computer Vision and Deep Learning for Waste Management Systems",
+      name: "🗑️ Waste Management System using Deep Learning",
       description:
-        "Automated waste classification system, improving municipal waste management efficiency through computer vision.",
+        "Designed and optimized a CNN model for waste classification, improving automation in municipal waste processing systems.",
       link: "https://doi.org/10.1109/ICACITE53722.2022.9823449",
-      skills: [
-        "Deep Learning",
-        "Computer Vision Classification",
-        "React",
-        "Node.js",
-      ],
+      skills: ["Deep Learning", "Computer Vision", "Classification"],
     },
     {
-      name: "🚁 Detection of Camouflaged Drones Using Computer Vision",
+      name: "🚁 Detection of Camouflaged Drones",
       description:
-        "Implemented a CNN-based detection system for identifying camouflaged UAVs in complex backgrounds, addressing security and surveillance challenges.",
+        "Developed a CNN-based UAV detection model for low-visibility environments addressing surveillance and defense challenges.",
       link: "https://doi.org/10.1109/CISES54857.2022.9844399",
-      skills: ["CNN", "Object Detection", "UAV", "Computer Vision"],
+      skills: ["CNN", "Object Detection", "UAV", "Security Systems"],
     },
     {
-      name: "🍎 Apple Fruit Disease Detection Using K-Means Clustering",
+      name: "🍎 Apple Disease Detection using K-Means Clustering",
       description:
-        "Engineered MATLAB-based system for agricultural disease detection using image segmentation and neural networks, achieving 5% accuracy improvement.",
+        "Created MATLAB-based image segmentation and disease detection model achieving a 5% accuracy improvement.",
       link: "https://doi.org/10.1007/978-981-16-0695-3_9",
-      skills: [
-        "MATLAB",
-        "K-Means Clustering",
-        "Image Segmentation",
-        "Neural Networks",
-      ],
+      skills: ["MATLAB", "Neural Networks", "Image Processing"],
     },
   ],
+
   experience: [
     {
       company: "IBM India Pvt. Ltd.",
-      title: "Associate Systems Engineer",
-      dateRange: "June 2022 - July 2023",
+      title: "Full-Stack Application Developer",
+      dateRange: "June 2022 – Present",
       bullets: [
-        "Reduced post‑release defects by 15% by designing 500+ test cases and validating data integrity with SQL.",
-        "Accelerated sprint cycles 25% by standardizing JIRA defect reports with reproducible steps and regression coverage.",
-        "Improved defect resolution time by 18% through structured triage and close collaboration with developers.",
+        "Developed Java-based CRM modules improving customer and asset workflows for telecom operations.",
+        "Built Angular micro-frontends and REST microservices managing 2,000+ telecom assets.",
+        "Increased unit test coverage to 80% by integrating AI-assisted development and test automation.",
+        "Improved performance and maintainability by refactoring legacy modules across teams."
       ],
     },
     {
       company: "Collaborative Intelligence Pvt. Ltd.",
-      title: "Student Intern",
-      dateRange: "Jun 2021 - May 2022",
+      title: "AI Engineer",
+      dateRange: "June 2021 – June 2022",
       bullets: [
-        "Built and implemented comprehensive computer vision systems to handle high-resolution images captured by drones.",
-        "Achieved a 15% boost in detection accuracy and 10% improvement in object detection and tracking speed.",
-        "Enhanced prototype deliverables by collaborating with team and integrating AI workflows into production pipelines for real-time analysis.",
+        "Designed computer vision pipelines for high-resolution object detection, boosting accuracy by 15%.",
+        "Integrated real-time AI workflows into production environments with improved latency.",
+        "Enhanced prototype readiness for defense and surveillance use cases."
+      ],
+    },
+    {
+      company: "Conduent",
+      title: "Software Test Engineer",
+      dateRange: "July 2020 – May 2021",
+      bullets: [
+        "Designed 500+ test cases and validated SQL data integrity, reducing post-release defects by 15%.",
+        "Accelerated sprint cycles by 25% through reproducible JIRA defect reports and full regression coverage."
       ],
     },
   ],
+
   education: [
     {
-      school: "Amity University",
+      school: "National Institute of Technology (NIT) Durgapur",
       degree: "Bachelor of Technology in Electronics and Communications",
-      dateRange: "2018 - 2022",
-      achievements: [
-        "Graduated First Class Division with 6.78 CGPA",
-        "Led University Team to National Level Hackathon",
-      ],
+      dateRange: "2020",
+      achievements: [],
     },
   ],
 };
