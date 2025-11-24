@@ -1,40 +1,29 @@
-export const siteConfig = { 
+export const siteConfig = {
   name: "Rishabh Tiwari",
-  title: "Full-Stack Software Engineer | AI Enthusiast (Computer Vision & Deep Learning)",
-  description: "Portfolio website of Full-Stack and AI Engineer Rishabh Tiwari",
-  accentColor: "#1E40AF",
-
+  title: "Software Test Engineer",
+  description: "Portfolio website of Rishabh Tiwari",
+  accentColor: "#8B5CF6",
   social: {
     email: "rishabhofficial244@gmail.com",
     linkedin: "https://linkedin.com/in/rishabh028210",
     twitter: "https://x.com/auracup",
     github: "https://github.com/rishabh0282",
   },
-
   aboutMe:
-    "I am a Full-Stack and AI Engineer with industry experience in building production-grade applications and computer vision pipelines. I specialize in Java, Angular, .NET, AI-assisted development, and deep learning frameworks such as TensorFlow. I have worked at IBM as a Full-Stack Application Developer, where I built microservices, Angular modules, and enhanced test automation. Previously, at Collaborative Intelligence, I engineered real-time AI workflows for high-resolution object detection. I hold ISTQB and Microsoft Azure certifications, and I enjoy solving real-world problems using scalable software systems and machine learning.",
-
+    "I am Rishabh Tiwari, a Software Test Engineer certified by ISTQB, specializing in both Manual and Automation testing. I possess a B.Tech in Electronics and Communication Engineering from Amity University, Noida, as well as certifications in ISTQB Foundation Level and Microsoft Azure Fundamentals. I served at IBM India Pvt. Ltd. as an Associate Systems Engineer, where I enhanced the testing approach, defect management, and sprint productivity. Prior to joining IBM, I interned at Collaborative Intelligence Pvt. Ltd., where I developed deep learning pipelines for Object Detection and Tracking. I have a strong interest in software development and computer vision, and I love gaming as well as creating content with imaginative presentations.",
   skills: [
-    "Full-Stack Development",
-    "Angular",
+    "Manual Testing",
+    "JavaScript",
     "Java",
-    ".NET",
     "Python",
-    "TypeScript",
-    "C#",
-    "Flask",
-    "Django",
-    "TensorFlow",
+    "RTM Debugging",
+    "TCD",
+    "Regression Testing",
+    "UAT",
+    "Defect Reporting & Tracking",
     "SQL",
-    "MongoDB",
-    "SQLite",
-    "AI & Computer Vision",
-    "Git",
-    "Azure DevOps",
-    "Unit Testing",
-    "Automation Testing"
-  ],
- 
+    "JIRA",
+  ], 
   projects: [
     {
       name: "Object Detection on Satellite Imagery using Modified YOLOv4",
@@ -78,46 +67,34 @@ export const siteConfig = {
     },
   ],
   
-
   experience: [
     {
       company: "IBM India Pvt. Ltd.",
-      title: "Full-Stack Application Developer",
-      dateRange: "June 2022 – Present",
+      title: "Associate Systems Engineer",
+      dateRange: "June 2022 - July 2023",
       bullets: [
-        "Developed Java-based CRM modules improving customer and asset workflows for telecom operations.",
-        "Built Angular micro-frontends and REST microservices managing 2,000+ telecom assets.",
-        "Increased unit test coverage to 80% by integrating AI-assisted development and test automation.",
-        "Improved performance and maintainability by refactoring legacy modules across teams."
+        "Reduced post‑release defects by 15% by designing 500+ test cases and validating data integrity with SQL.",
+        "Accelerated sprint cycles 25% by standardizing JIRA defect reports with reproducible steps and regression coverage.",
+        "Improved defect resolution time by 18% through structured triage and close collaboration with developers.",
       ],
     },
     {
       company: "Collaborative Intelligence Pvt. Ltd.",
-      title: "AI Engineer",
-      dateRange: "June 2021 – June 2022",
+      title: "Student Intern",
+      dateRange: "Jun 2021 - May 2022",
       bullets: [
-        "Designed computer vision pipelines for high-resolution object detection, boosting accuracy by 15%.",
-        "Integrated real-time AI workflows into production environments with improved latency.",
-        "Enhanced prototype readiness for defense and surveillance use cases."
-      ],
-    },
-    {
-      company: "Conduent",
-      title: "Software Test Engineer",
-      dateRange: "July 2020 – May 2021",
-      bullets: [
-        "Designed 500+ test cases and validated SQL data integrity, reducing post-release defects by 15%.",
-        "Accelerated sprint cycles by 25% through reproducible JIRA defect reports and full regression coverage."
+        "Built and implemented comprehensive computer vision systems to handle high-resolution images captured by drones.",
+        "Achieved a 15% boost in detection accuracy and 10% improvement in object detection and tracking speed.",
+        "Enhanced prototype deliverables by collaborating with team and integrating AI workflows into production pipelines for real-time analysis.",
       ],
     },
   ],
-
   education: [
     {
-      school: "National Institute of Technology (NIT) Durgapur",
+      school: "Amity University",
       degree: "Bachelor of Technology in Electronics and Communications",
-      dateRange: "2020",
-      achievements: [],
+      dateRange: "2018 - 2022",
+      
     },
   ],
 };
