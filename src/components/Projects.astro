@@ -1,22 +1,14 @@
 ---
 import { siteConfig } from "../config";
-import { IconSatellite, IconTrash, IconDrone, IconApple } from "@tabler/icons-react";
+import { IconSatellite, IconDrone, IconApple, IconPlant2, IconRecycle } from "@tabler/icons-react";
 
 const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
-
-// Helper: detect publication type from link
-function getPublicationLabel(link) {
-  if (!link) return null;
-  if (link.includes("wiley")) return "Wiley Journal";
-  if (link.includes("springer")) return "Springer";
-  if (link.includes("ieee")) return "IEEE";
-  return "Published";
-}
 
 // Helper: choose icon based on project name
 function getProjectIcon(name) {
   if (name.includes("Satellite")) return IconSatellite;
-  if (name.includes("Waste")) return IconTrash;
+  if (name.includes("WasteDet")) return IconRecycle;   // ♻️ anchor-free waste detection
+  if (name.includes("Waste Management")) return IconPlant2; // 🌱 CNN waste classification
   if (name.includes("Drone")) return IconDrone;
   if (name.includes("Apple")) return IconApple;
   return null;
@@ -39,7 +31,6 @@ function getProjectIcon(name) {
 
       <div class="space-y-12">
         {siteConfig.projects.map((project, index) => {
-          const publication = getPublicationLabel(project.link);
           const Component = project.link ? "a" : "div";
           const linkProps = project.link
             ? { href: project.link, target: "_blank", rel: "noopener noreferrer" }
@@ -51,7 +42,7 @@ function getProjectIcon(name) {
               {...linkProps}
               class="block bg-slate-900 border border-slate-800 rounded-xl p-6 md:p-8 transition-all hover:border-indigo-400 hover:shadow-lg hover:shadow-indigo-500/10"
             >
-              <!-- Title + Badge -->
+              <!-- Title -->
               <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
                 <div class="flex items-center gap-3">
                   <span class="accent-mono text-base md:text-lg">0{index + 1}</span>
@@ -60,18 +51,19 @@ function getProjectIcon(name) {
                     {project.name.replace(/^[^\w\s]/, "")} {/* remove emoji from name */}
                   </h3>
                 </div>
-
-                {publication && (
-                  <span class="accent-mono text-xs px-3 py-1 rounded-md bg-indigo-500/15 border border-indigo-400/40">
-                    {publication}
-                  </span>
-                )}
               </div>
 
               <!-- Description -->
               <p class="mt-4 text-sm md:text-base text-slate-300 leading-relaxed">
                 {project.description}
               </p>
+
+              <!-- Publisher -->
+              {project.publisher && (
+                <p class="mt-2 text-xs md:text-sm text-slate-400 italic">
+                  {project.publisher}
+                </p>
+              )}
 
               <!-- Tech Stack -->
               {project.skills?.length > 0 && (

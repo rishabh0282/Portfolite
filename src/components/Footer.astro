@@ -7,7 +7,7 @@ const hasExperience = siteConfig.experience?.length > 0;
 const hasEducation = siteConfig.education?.length > 0;
 ---
 
-<footer class="bg-slate-950 border-t border-slate-800 text-slate-400 px-6 md:px-20 lg:px-32 py-14 mt-24">
+<footer class="bg-slate-950 border-t border-slate-800 text-slate-400 px-6 md:px-20 lg:px-32 pt-14 pb-10">
   <div class="max-w-6xl mx-auto flex flex-col md:flex-row md:items-start md:justify-between gap-10">
 
     <!-- Branding -->
@@ -64,6 +64,6 @@ const hasEducation = siteConfig.education?.length > 0;
   }
 
   :root {
-    --accent-color: ${siteConfig.accentColor};
+    --accent-color: {siteConfig.accentColor};
   }
 </style>

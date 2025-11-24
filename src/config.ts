@@ -34,37 +34,50 @@ export const siteConfig = {
     "Unit Testing",
     "Automation Testing"
   ],
-
+ 
   projects: [
     {
-      name: "🛰️ Satellite Object Detection using Modified YOLOv4",
+      name: "Object Detection on Satellite Imagery using Modified YOLOv4",
       description:
-        "Engineered a modified YOLOv4 architecture for small-object detection in satellite imagery, boosting accuracy and inference speed.",
+        "Engineered a YOLOv4-modified model for efficient small-object detection in satellite imagery, improving accuracy and inference speed.",
       link: "https://doi.org/10.1111/exsy.13180",
+      publisher: "Wiley (Expert Systems Journal, 2023)",
       skills: ["TensorFlow", "Deep Learning", "Satellite Imagery", "Computer Vision"],
     },
     {
-      name: "🗑️ Waste Management System using Deep Learning",
+      name: "WasteDet: Anchor-Free Detection for Waste Management",
       description:
-        "Designed and optimized a CNN model for waste classification, improving automation in municipal waste processing systems.",
+        "Proposed a novel anchor-free detection algorithm tailored for waste object recognition, outperforming anchor-based models in cluttered environments.",
+      link: "https://doi.org/10.1109/CISES54857.2022.9844399",
+      publisher: "IEEE (CISES Conference, 2022)",
+      skills: ["Object Detection", "Anchor-Free Models", "Waste Management", "Computer Vision"],
+    },
+    {
+      name: "Waste Management System using Deep Learning",
+      description:
+        "Designed and optimized a CNN-based algorithm for waste classification, enhancing automation in municipal waste processing.",
       link: "https://doi.org/10.1109/ICACITE53722.2022.9823449",
+      publisher: "IEEE (ICACITE Conference, 2022)",
       skills: ["Deep Learning", "Computer Vision", "Classification"],
     },
     {
-      name: "🚁 Detection of Camouflaged Drones",
+      name: "Detection of Camouflaged Drones",
       description:
-        "Developed a CNN-based UAV detection model for low-visibility environments addressing surveillance and defense challenges.",
+        "Developed a CNN-based UAV detection model for camouflaged and low-visibility scenarios, addressing surveillance and defense challenges.",
       link: "https://doi.org/10.1109/CISES54857.2022.9844399",
+      publisher: "IEEE (CISES Conference, 2022)",
       skills: ["CNN", "Object Detection", "UAV", "Security Systems"],
     },
     {
-      name: "🍎 Apple Disease Detection using K-Means Clustering",
+      name: "Apple Disease Detection using K-Means Clustering",
       description:
-        "Created MATLAB-based image segmentation and disease detection model achieving a 5% accuracy improvement.",
+        "Created MATLAB-based image segmentation and disease detection model for apple fruits, achieving improved classification accuracy.",
       link: "https://doi.org/10.1007/978-981-16-0695-3_9",
-      skills: ["MATLAB", "Neural Networks", "Image Processing"],
+      publisher: "Springer (Lecture Notes in Electrical Engineering, 2021)",
+      skills: ["MATLAB", "Image Processing", "Clustering", "Agriculture"],
     },
   ],
+  
 
   experience: [
     {
