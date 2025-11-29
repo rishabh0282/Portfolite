@@ -6,7 +6,7 @@ export const siteConfig = {
 
   social: {
     email: "rishabhofficial244@gmail.com",
-    linkedin: "https://linkedin.com/in/rishabh028210",
+    linkedin: "https://linkedin.com/in/rishabh0282",
     twitter: "https://x.com/auracup",
     github: "https://github.com/rishabh0282",
   },
